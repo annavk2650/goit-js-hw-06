@@ -17,7 +17,7 @@ const list = document.querySelector('.gallery');
 const makeGallery = function (images) {
   return `
   <li>
-    <img 
+    <img
       src = '${images.url}'
       alt = '${images.alt}'
     >
@@ -34,4 +34,14 @@ list.style.justifyContent = 'space-between';
 list.style.flexWrap = 'wrap';
 list.style.padding = '0';
 list.style.margin = '0';
-console.log(list);
+
+// const element = images.map(image => {
+//   const elLi = `<li>
+//     <img
+//       src = '${images.url}'
+//       alt = '${images.alt}'
+//     >
+//   </li>`;
+//   return elLi;
+// });
+// list.insertAdjacentHTML('beforeend', element.join(''));
